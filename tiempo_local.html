@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Tiempo</title>
+    <link rel="stylesheet" href="tiempo_local.css">
+</head>
+<body>
+    <header class="barra-superior">
+        <h1>El Tiempo</h1>
+
+        <nav>
+            <button data-ciudad="Arica">Arica</button>
+            <button data-ciudad="Valparaíso">Valparaíso</button>
+            <button data-ciudad="Valdivia">Valdivia</button>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <section class="encabezado">
+            <h2 id="ciudad">Santiago</h2>
+
+            <label>
+                ver temperatura en
+                <select id="unidad">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </label>
+        </section>
+
+        <section id="pronostico" class="pronostico"></section>
+
+        <aside id="cookies" class="cookies">
+            <div class="cookie-icon">🍪</div>
+
+            <div>
+                <h3>Política de cookies</h3>
+                <p>
+                    Nuestro sitio web utiliza cookies para garantizar que obtenga
+                    la mejor experiencia en nuestro sitio web.
+                    <a href="#">Leer más...</a>
+                </p>
+            </div>
+
+            <button id="aceptar-cookies">Aceptar</button>
+        </aside>
+    </main>
+
+    <script src="tiempo_local.js"></script>
+</body>
+</html>
